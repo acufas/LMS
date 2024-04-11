@@ -1,1 +1,8 @@
-<h1>Hello, Rails!</h1>
+<h1>Courses</h1>
+<ul>
+  <% @courses.each do |course| %>
+    <li>
+      <%= link_to course.full_title, course %>
+    </li>
+  <% end %>
+</ul>
